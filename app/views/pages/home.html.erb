@@ -1,2 +1,16 @@
-<h1>Pages</h1>
-<p>Hello world !</p>
+<div class="banner", style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(<%= asset_path ('barber_banner.jpg')%>); opacity: 0.93;">
+    <%#= image_tag('barber.jpg'), class: 'banner' %>
+    <div class="container text-uppercase font-weight-bold">
+      <h1><strong>Style impeccable</strong><h1>
+      <h1>Pour hommes </h1>
+      <h1>Exigeant.</h1>
+      <%= link_to "Reserve", "#", class: "btn btn-flat" %>
+      <div class="heures">
+        <p id='open'><u>OPEN HOURS</u></p>
+        <p><strong>Week :</strong></p>
+        <p> 6 PM - 10 PM </p>
+        <p><strong>Week-end :</strong></p>
+        <p>10 AM - 10 PM</p>
+      </div>
+    </div>
+</div>
