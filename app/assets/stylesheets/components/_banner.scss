@@ -1,6 +1,7 @@
 .banner {
   background-size: cover;
   background-position: center;
+  padding: 150px 0;
 }
 
 .banner h1 {
@@ -23,4 +24,12 @@
   height: 50vh;
   object-fit: cover;
   margin: 0px;
+}
+
+.btn-flat {
+  color: white;
+  padding: 8px 24px;
+  border-radius: 4px;
+  background: #670BFF;
+  transition: background 0.3s ease;
 }
