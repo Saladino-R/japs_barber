@@ -8,9 +8,18 @@ $headers-font: "Nunito", "Helvetica", "sans-serif";
 // To use a font file (.woff) uncomment following lines
 // @font-face {
 //   font-family: "Font Name";
-//   src: font-url('FontFile.eot');
-//   src: font-url('FontFile.eot?#iefix') format('embedded-opentype'),
-//        font-url('FontFile.woff') format('woff'),
-//        font-url('FontFile.ttf') format('truetype')
+//   src: font-url('FontFile.eot?#iefix') format('truetype'),
+//        font-style: normal;
+//        font-weight: 400;
+//        font-display: swap;
 // }
 // $my-font: "Font Name";
+
+@font-face {
+  font-family: "Xanax";
+  src: url('Xanax') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+$test-font: "Xanax","Helvetica", "sans-serif";
