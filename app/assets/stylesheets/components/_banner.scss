@@ -1,17 +1,3 @@
-
-
-#open{
-    font-size: 21px;
-    font-weight: 600;
-    opacity: 0.9;
-    padding-bottom: 10px;
-    font-family: $test-font;
-}
-
-.time-little{
-  font-size: 15px !important;
-  opacity: 0.6 !important;
-}
 .banner img {
   width: 100%;
   height: 50vh;
@@ -23,8 +9,14 @@
   color: white;
   padding: 8px 24px;
   border-radius: 4px;
-  background: #ce9c6b;
+  background: $brown;
   transition: background 0.3s ease;
+}
+
+.btn-flat:hover{
+  color: $brown;
+  border: solid 1px $brown;
+  font-weight: 600;
 }
 
 .micro-footer{
@@ -33,15 +25,6 @@
   align-items: center;
   flex-direction: column;
 }
-
-.fab{
-  color: #ce9c6b;
-}
-// #text-center{
-//   // align-items: center;
-//   // text-align: center;
-//   // justify-content: center;
-// }
 
 .banner {
   background-size: cover;
