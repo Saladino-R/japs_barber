@@ -20,8 +20,8 @@
         <p id="text-center"><strong>Entrez comme un client, sortez comme un Gentleman.</strong></p>
       </div>
       <div class="logo-right">
-        <a href='https://www.instagram.com' target='_blank'><i class="fab fa-instagram"></i></a>
-        <a href='https://www.tiktok.com/' target='_blank'><i class="fab fa-tiktok"> </i></a>
+        <a href='https://instagram.com/japs.barber?igshid=YmMyMTA2M2Y=' target='_blank'><i class="fab fa-instagram"></i></a>
+        <a href='https://www.tiktok.com/@jcbulanadi?_t=8bU52kHeGmL&_r=1' target='_blank'><i class="fab fa-tiktok"> </i></a>
         <a href='https://www.facebook.com' target='_blank'><i class="fab fa-facebook"></i></a>
       </div>
     </div>
@@ -37,19 +37,50 @@
 <div class="service">
   <div class="container">
     <div class="row">
-      <h1>Services proposés</h1>
-        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+      <h1 class='text-center'>Services</h1>
+        <p class='text-center'>Style à la fois pour les cheveux comme pour la barbe sans oublier la couleur.</p>
         <div class="coupes_cheveux grid_column">
           <div class="coupe">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, porro. Reprehenderit quas facere ex magni! Totam eveniet repudiandae ab non repellendus, reiciendis tempore! Magnam voluptate, labore enim assumenda aliquid sunt.</p>
+           <%= image_tag("scissor.png", height:"50", width:"50", class:'color-logo center-content') %>
+            <h5>Coupes - Révélez votre style</h5>
+            <p class='opacity-text'>Nous offrons une large gamme de coupes de cheveux pour tous les styles et tous les goûts.
+            Nous utilisons des techniques de pointe pour garantir une coupe précise et personnalisée.</p>
           </div>
           <div class="coupe">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet suscipit perspiciatis, ad adipisci magni rerum reiciendis aperiam magnam obcaecati beatae, voluptatibus sapiente nulla voluptatum ullam officia eligendi porro explicabo aliquid?</p>
+          <%= image_tag("cut_beard.png", height:"50", width:"50", class:'color-logo center-content') %>
+            <h5>La Barbe - Notre spécialité</h5>
+            <p class='opacity-text'>Messieurs, prenez soin de votre barbe avec notre expertise en matière de soins pour la barbe.
+            Nous offrons des services de coupe et de soins pour la barbe, pour vous aider à maintenir une
+            apparence soignée et élangante.</p>
           </div>
           <div class="coupe">
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate nostrum cum aspernatur, eaque, voluptatem autem reprehenderit mollitia qui magni reiciendis eos. Obcaecati eius consequuntur tempore deleniti dignissimos amet voluptate reprehenderit?</p>
-          </div>
+           <%= image_tag("hairdresser.png", height:"50", width:"50", class:'color-logo center-content') %>
+            <div class= 'logo' style="url(<%= asset_path ('hairdresser.png')%>);"></div>
+            <h5>Des couleurs - Changez de vie</h5>
+              <p class='opacity-text'>Nous utilisons des techniques de coloration de haute qualité
+              pour obtenir des résultats durables et éclatants.
+              Nous utilisons des produits de haute qualité pour garantir des
+              des couleurs durables et éclatantes tout en préservant la santé de vos cheveux.</p>
         </div>
+    </div>
+  </div>
+</div>
+<div class="realisations">
+  <div class="container">
+    <div class="row">
+      <h1 class='text-center'>Réalisations</h1>
+      <p class='text-center'>Une gallerie photo comprenant quelques chef-d'oeuvre.</p>
+      <div class="coupe-homme d-flex">
+        <div class="coupe-couleur">
+          <%= image_tag("hairdresser.png", size:"16x15") %>
+        </div>
+        <div class="coupe-couleur-text">
+          <h5 class='text-center'></h5>
+          <p>Style frais pour l'été comme l'automne. </p>
+        </div>
+      </div>
+
+
     </div>
   </div>
 </div>

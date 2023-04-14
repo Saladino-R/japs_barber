@@ -27,9 +27,9 @@
 }
 
 #open{
-    font-size: 20px;
+    font-size: 21px;
     font-weight: 600;
-    opacity: 0.8;
+    opacity: 0.9;
     padding-bottom: 10px;
     font-family: $test-font;
 }
@@ -69,6 +69,6 @@
 //   // justify-content: center;
 // }
 
-h1, p{
+h1, h5, p{
   color: $white;
 }
