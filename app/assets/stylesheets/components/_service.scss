@@ -1,0 +1,32 @@
+.service{
+  background: $black;
+  padding: 20px 0;
+}
+
+.grid_column{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 50px;
+}
+
+.opacity-text{
+  opacity: 0.6;
+  font-size: small;
+  font-weight: lighter;
+}
+
+.coupe h5{
+  text-align: center;
+}
+
+.color-logo{
+  background-color: $brown;
+  border-radius: 8px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.center-content{
+  text-align: center;
+  justify-content: center;
+}
