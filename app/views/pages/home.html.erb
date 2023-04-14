@@ -29,7 +29,7 @@
 <div class="apropos">
   <div class="container">
     <div class="row">
-      <h1 class='text-center'> Bienvenue chez Jasp Barber Shop</h1>
+      <h1 class='text-center'>Jasp Barber Shop</h1>
       <p class='text-center'> On her way she met a copy. The copy warned the Little Blind Text, that where it came from it would have been rewritten a thousand times and everything that was left from its origin would be the word "and" and the Little Blind Text should turn around and return to its own, safe country. But nothing the copy said could convince her and so it didnt take long until a few insidious Copy Writers ambushed her, made her drunk with Longe and Parole and dragged her into their agency, where they abused her for their.</p>
     </div>
   </div>
@@ -71,16 +71,69 @@
       <h1 class='text-center'>Réalisations</h1>
       <p class='text-center'>Une gallerie photo comprenant quelques chef-d'oeuvre.</p>
       <div class="coupe-homme d-flex">
-        <div class="coupe-couleur">
-          <%= image_tag("hairdresser.png", size:"16x15") %>
+        <div class="card-gallery mt-3">
+          <%= image_tag 'https://i.ibb.co/C9804hK/hairboy.jpg', height: "320", width: "210", cropp: :fill %>
         </div>
-        <div class="coupe-couleur-text">
-          <h5 class='text-center'></h5>
-          <p>Style frais pour l'été comme l'automne. </p>
+        <div class="card-gallery-infos">
+          <h5 class='text-center pb-3'>Vincenzo Falcone</h5>
+          <p class='pb-4'>La teinture blonde ajoute de la fraicheur et du style à la coupe, la
+           rendant plus audacieuse et originale.
+           Cette coupe de cheveux est tendance, elle offre une option de style
+           pour les garçons qui veulent se démarquer avec une coupe de cheveux unique.
+          </p>
+          <a href="#" id='button-details'>
+            <span>Détails</span>
+          </a>
         </div>
       </div>
-
-
+      <div class="coupe-homme d-flex">
+        <div class="card-gallery mt-3">
+          <div class="card-gallery-infos">
+            <h5 class='text-center pb-3'>Tony Blackpepper</h5>
+            <p class='pb-4'>Style frais pour l'année, dégradé américain avec nuque rasé, qui
+            se fondent progressivement en cheveux plus longs sur le dessus de la tête.
+            La longueur des cheveux sur le dessus peut être coiffée de différentes manières,
+            selon les préférences.
+            </p>
+            <a href="#" id='button-details'>
+              <span>Détails</span>
+            </a>
+          </div>
+          <%= image_tag 'https://i.ibb.co/QPcbcwD/right-tony-blackpepper.jpg', height: "320", width: "210", cropp: :fill %>
+        </div>
+      </div>
+      <div class="coupe-homme d-flex">
+        <div class="card-gallery mt-3">
+          <%= image_tag 'https://i.ibb.co/5KC43qB/john-doe.jpg', height: "320", width: "210", cropp: :fill %>
+        </div>
+        <div class="card-gallery-infos">
+          <h5 class='text-center pb-3'>John Doe</h5>
+          <p class='pb-4'>Style frais pour l'année, dégradé américain avec nuque rasé, qui
+           se fondent progressivement en cheveux plus longs sur le dessus de la tête.
+           La longueur des cheveux sur le dessus peut être coiffée de différentes manières,
+           selon les préférences.
+          </p>
+          <a href="#" id='button-details'>
+            <span>Détails</span>
+          </a>
+        </div>
+      </div>
+      <div class="coupe-homme d-flex">
+        <div class="card-gallery mt-3">
+          <div class="card-gallery-infos">
+            <h5 class='text-center pb-3'>Danny Monterro</h5>
+            <p class='pb-4'>Style frais pour l'année, dégradé américain avec nuque rasé, qui
+            se fondent progressivement en cheveux plus longs sur le dessus de la tête.
+            La longueur des cheveux sur le dessus peut être coiffée de différentes manières,
+            selon les préférences.
+            </p>
+            <a href="#" id='button-details'>
+              <span>Détails</span>
+            </a>
+          </div>
+          <%= image_tag 'https://i.ibb.co/TBDqJSR/right-danny-coco.jpg', height: "320", width: "210", cropp: :fill %>
+        </div>
+      </div>
     </div>
   </div>
 </div>

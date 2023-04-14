@@ -11,7 +11,7 @@
 
 .banner2 h1 {
   margin: 0;
-  color: white;
+  color: $white;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
   font-size: 32px;
   font-weight: bold;
@@ -19,7 +19,7 @@
 
 .banner2 p {
   font-size: 17px;
-  color: white;
+  color: $white;
   opacity: .7;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
   text-align: right;
@@ -37,4 +37,11 @@
 .time-little{
   font-size: 15px !important;
   opacity: 0.6 !important;
+}
+
+.fab{
+  padding-top: 15px;
+  color: $brown;
+  font-size: 25px;
+  padding-left: 1rem;
 }

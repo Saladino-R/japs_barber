@@ -1,3 +1,82 @@
 .realisations{
   background: $gray;
+  padding: 20px 0;
 }
+.coupe-homme{
+  gap: 30px;
+}
+
+.card-gallery {
+  overflow: hidden;
+  height: 200px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  display: flex;
+  align-items: center;
+}
+
+.card-gallery img {
+  width: 520px;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-gallery h5 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.card-gallery p {
+  font-size: 12px;
+  line-height: 1.4;
+  opacity: .7;
+  margin-bottom: 0;
+  margin-top: 8px;
+}
+
+.card-gallery .card-gallery-infos {
+  padding: 16px;
+}
+
+
+// span button test universe
+
+#button-details {
+  background-color: $brown;
+  text-decoration: none;
+  border-radius: 4px;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 17px;
+  padding: 16px;
+  width: 130px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+ }
+
+ #button-details span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+ }
+
+ #button-details span:after {
+  content: '»';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -15px;
+  transition: 0.5s;
+ }
+
+ #button-details:hover span {
+  padding-right: 15px;
+ }
+
+ #button-details:hover span:after {
+  opacity: 1;
+  right: 0;
+ }
