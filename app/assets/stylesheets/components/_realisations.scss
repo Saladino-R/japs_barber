@@ -4,14 +4,15 @@
 }
 .coupe-homme{
   gap: 30px;
+  margin-top: 50px;
 }
 
 .card-gallery {
   overflow: hidden;
   height: 200px;
-  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  // box-shadow: 0 0 15px rgba(0,0,0,0.2);
   display: flex;
-  align-items: center;
+  // align-items: center;
 }
 
 .card-gallery img {
@@ -20,18 +21,19 @@
   object-fit: cover;
 }
 
-.card-gallery h5 {
-  font-size: 16px;
+.card-gallery-infos h5 {
+  font-size: 20px;
   font-weight: bold;
   margin: 0;
 }
 
-.card-gallery p {
-  font-size: 12px;
+.card-gallery-infos p {
+  font-size: 16px;
   line-height: 1.4;
   opacity: .7;
   margin-bottom: 0;
   margin-top: 8px;
+  margin-bottom: 4px;
 }
 
 .card-gallery .card-gallery-infos {
