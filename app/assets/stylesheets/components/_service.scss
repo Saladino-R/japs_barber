@@ -27,6 +27,18 @@
 }
 
 .center-content{
+  display: flex;
+  margin: auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.coupe{
+  padding-bottom: 10px;
+}
+
+.coupe p{
   text-align: center;
-  justify-content: center;
+  // peut etre a changer plus tard
+  // text-align: justify;
 }

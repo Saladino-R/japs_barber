@@ -1,0 +1,36 @@
+.pricing{
+  background: $black;
+  padding: 20px;
+}
+
+.pricing h5{
+  opacity: 0.8;
+  font-weight:400;
+  font-size: 18px;
+}
+
+.pricing .italic-style{
+  opacity: 0.6;
+  font-size: small;
+  font-weight: lighter;
+  font-style: italic;
+}
+
+.price-infos{
+  opacity: 0.7;
+  font-size: 15px;
+  line-height: 1.4;
+  font-style: oblique;
+}
+
+.price-entry{
+  color: $brown;
+  text-align: right;
+  font-weight: bold;
+}
+
+.price-separator{
+  font-weight: 500;
+  color: $brown;
+  font-size: 13px;
+}
