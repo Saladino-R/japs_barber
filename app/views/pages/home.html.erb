@@ -1,8 +1,9 @@
-<div class="banner2", style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(<%= asset_path ('barber_banner.jpg')%>); opacity: 0.93; ">
+
+<div class="banner2", style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(<%= asset_path ('barber_banner.jpg')%>); opacity: 0.93;">
     <%#= image_tag('barber.jpg'), class: 'banner' %>
     <div class="container text-uppercase font-weight-bold">
       <div class="accroche">
-        <h1><strong>Style impeccable</strong><h1>
+        <h1 class="animate__animated animate__bounce"><strong>Style impeccable</strong><h1>
         <h1>Pour hommes </h1>
         <h1>Exigeant.</h1>
         <%= link_to "Reserve", bookings_path , class: "btn btn-flat" %>
@@ -27,15 +28,15 @@
     </div>
 </div>
 <div class="apropos">
-  <div class="container">
+  <div class="container reveal">
     <div class="row">
-      <h1 class='text-center'>Jasp Barber Shop</h1>
-      <p class='text-center'> On her way she met a copy. The copy warned the Little Blind Text, that where it came from it would have been rewritten a thousand times and everything that was left from its origin would be the word "and" and the Little Blind Text should turn around and return to its own, safe country. But nothing the copy said could convince her and so it didnt take long until a few insidious Copy Writers ambushed her, made her drunk with Longe and Parole and dragged her into their agency, where they abused her for their.</p>
+      <h1 class='text-center animate__animated animate__fadeInUp'>Jasp Barber Shop</h1>
+      <p class='text-center animate__animated animate__fadeInUp'> On her way she met a copy. The copy warned the Little Blind Text, that where it came from it would have been rewritten a thousand times and everything that was left from its origin would be the word "and" and the Little Blind Text should turn around and return to its own, safe country. But nothing the copy said could convince her and so it didnt take long until a few insidious Copy Writers ambushed her, made her drunk with Longe and Parole and dragged her into their agency, where they abused her for their.</p>
     </div>
   </div>
 </div>
 <div class="service">
-  <div class="container">
+  <div class="container reveal">
     <div class="row">
       <h1 class='text-center'>Services</h1>
         <p class='text-center'>Style à la fois pour les cheveux comme pour la barbe sans oublier la couleur.</p>
@@ -66,7 +67,7 @@
   </div>
 </div>
 <div class="realisations">
-  <div class="container">
+  <div class="container reveal">
     <div class="row">
       <h1 class='text-center'>Réalisations</h1>
       <p class='text-center'>Une gallerie photo comprenant quelques chef-d'oeuvre.</p>
@@ -138,7 +139,7 @@
   </div>
 </div>
 <div class="pricing">
-  <div class="container">
+  <div class="container reveal">
     <div class="row text-center">
       <h1 class='text-center mb-2'>Plan & Pricing</h1>
       <p class='price-infos text-center mb-4'>Quelques idées de prix pratiqué selon les coupes.</p>
@@ -161,3 +162,30 @@
     </div>
   </div>
 </div>
+
+
+
+
+ <%# le js initial était ici transféré sous forme de composant dans le fichier app js%>
+
+
+<%# <script type="text/javascript">
+window.addEventListener('scroll', reveal);
+
+function reveal(){
+  var reveals = document.querySelectorAll('.reveal');
+
+  for(var i = 0; i < reveals.length; i++) {
+
+  var windowheight = window.innerHeight;
+  var revealtop = reveals[i].getBoundingClientRect().top;
+  var revealpoint = 150;
+
+    if(revealtop < windowheight - revealpoint){
+      reveals[i].classList.add('active');
+    }
+    else
+      reveals[i].classList.remove('active');
+  }
+}
+</script> %>
