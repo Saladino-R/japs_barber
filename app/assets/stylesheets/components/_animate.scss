@@ -1,0 +1,31 @@
+
+.animate__animated.animate__bounce {
+  --animate-duration: 2s;
+}
+
+
+
+.animate__bounceInRight{
+  --animate-duration: 1.5s;
+}
+
+
+
+
+
+
+
+
+//  LE TEXTE des banners est fait à ce niveau
+
+.reveal{
+  position: relative;
+  transform: translateY(100px);
+  opacity: 0;
+  transition: all 1s ease;
+}
+
+.reveal.active{
+  transform: translateY(0px);
+  opacity: 1;
+}

@@ -23,3 +23,17 @@ $headers-font: "Nunito", "Helvetica", "sans-serif";
   font-display: swap;
 }
 $test-font: "Xanax","Helvetica", "sans-serif";
+
+@font-face {
+  font-family: "Nat";
+  // src: url("Nature");
+  src: url("Callimathy") format('truetype');
+  src: url("Callimathy") format('embedded-opentype');
+  // src: url("Callimathy") format('embedded-opentype');
+  // src: url("Murphy's Folly.otf") format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  // font-display: swap;
+}
+
+$hours-font: "Nat","Helvetica", "sans-serif";
