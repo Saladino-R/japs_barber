@@ -5,3 +5,8 @@
 #
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
+
+cut1 = Cut.new(price: 20, description: 'Coupe Homme + Barbe')
+cut1.save
+cut2 = Cut.new(price: 15, description: 'Coupe Homme')
+cut2.save
