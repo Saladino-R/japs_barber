@@ -15,13 +15,8 @@
   </head>
 
   <body>
-  <%# enelvé ici car fait beugué le site en mettant un blanc de mierda %>
-  <%# <p class="notice"><%= notice %>
-  <%# <p class="alert"><%= alert %>
   <%= render "layouts/navbar" %>
-
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
+  <%= render 'layouts/flashes' %>
 
       <%= yield %>
 

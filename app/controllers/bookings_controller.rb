@@ -14,7 +14,7 @@ class BookingsController < ApplicationController
     if @booking.save
       redirect_to root_path, notice: "Reservation prise en compte"
     else
-      render :index, notice:"Erreur dans le formulaire", status: :unprocessable_entity
+      redirect_to cut_bookings_path(@cut.id), notice: "Erreur dans le formulaire"
     end
   end
 
