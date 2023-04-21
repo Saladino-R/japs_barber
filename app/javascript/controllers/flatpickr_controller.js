@@ -7,12 +7,13 @@ export default class extends Controller {
           minDate: "today",
           altInput: true,
           mode: 'range',
-          onOpen: [
-            function(_selectedDates, _dateStr, fp){
+          dateFormat: "Y-m-d",
+          onClose: function(_selectedDates, _dateStr, fp) => {
+            if (fp.selectedDates.length === 1) {
               const startDate = fp.formatDate(fp.selectedDates[0], 'Y-m-d');
               document.getElementById('start_time').value = startDate;
-            },
-          ]
+            }
+          }
     }
     console.log(startDate);
     flatpickr('#start_time', config);
