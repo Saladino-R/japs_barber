@@ -1,0 +1,11 @@
+.row-header,
+.rowa {
+  display: grid;
+}
+
+.row-header div,
+.rowa div {
+  grid-template-columns: repeat(2, 1fr 1fr);
+  padding: 10px;
+  // border: 1px red solid;
+}

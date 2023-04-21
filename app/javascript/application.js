@@ -2,7 +2,3 @@
 import "@hotwired/turbo-rails"
 import "./controllers"
 import "bootstrap"
-
-import { revealto } from "./components/reveal.js"
-
-revealto()

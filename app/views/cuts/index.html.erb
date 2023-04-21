@@ -1,0 +1,12 @@
+<h1>Nos coupes de cheveux</h1>
+
+<% @cuts.each do |cut| %>
+<div class="row-header">
+  <div class="rowa">
+      <div class="card">
+        <h6 class='text-center'><%= cut.description %> : <%= cut.price %> €</h6>
+        <%= link_to "Reserve", cut_bookings_path(cut.id) , class: "btn btn-flat" %>
+      </div>
+    </div>
+</div>
+<% end %>

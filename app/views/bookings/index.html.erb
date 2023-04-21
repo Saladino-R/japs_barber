@@ -1,9 +1,16 @@
-<h1>Book </h1>
+<h1>Book Here</h1>
 
-<%= simple_form_for @booking do |f| %>
-  <%= f.input :name %>
-  <%= f.input :address %>
-  <%= f.input :email %>
-  <%= f.input :phone_number %>
-  <%= f.button :submit %>
-<% end %>
+
+<section class="card">
+<div id="flat-booking-dates">
+  <%= simple_form_for [@cut, @booking], data: { controller: 'flatpickr'} do |f| %>
+    <%= f.input :name %>
+    <%= f.input :address %>
+    <%= f.input :email %>
+    <%= f.input :phone_number %>
+    <%= f.input :start_time, as: :string, required: false, input_html: { id: "start_time", value: @booking.start_time.try(:strftime, '%B %d, %Y'), data: { flatpickr_target: "startTime" } }, label: 'Début' %>
+    <%= f.input :end_time, as: :string, required: false, input_html: { id: "end_time", data: { flatpickr_target: "endTime" } }, label: 'Fin' %>
+    <%= f.button :submit, 'Reserver', class: 'btn btn-flat' %>
+  <% end %>
+</div>
+</section>
