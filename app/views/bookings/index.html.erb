@@ -1,14 +1,20 @@
-<h1>Book Here</h1>
-
+<div class="banner", style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(<%= asset_path ('form.jpg')%>);">
+    <%#= image_tag('barber.jpg'), class: 'banner' %>
+    <div class="container">
+      <h1>You want to book for a <strong> Hair cut ! </strong></h1>
+      <p>Can you complet the form below !</p>
+    </div>
+</div>
 
 <section class="card">
 <div id="flat-booking-dates">
-  <%= simple_form_for [@cut, @booking] do |f| %>
-    <%= f.input :description, label: 'Détails', id: 'description', :input_html => {:maxlength => 200} %>
-    <%# # placeholder: "Quelle longueur souhaitez vous enlever, si teinture la couleur ou autre rensignements...", %>
+  <%= simple_form_for [@cut, @booking], data: { controller: 'flatpickr'} do |f| %>
+    <%= f.input :description, label: 'Détails', id: 'description', :input_html => {:maxlength => 200},
+    placeholder: "Quelle longueur souhaitez vous enlever, si teinture la couleur ou autre rensignements...", %>
     <span id="char_count"></span>
-    <%= f.input :start_time, as: :date, label: 'Début' %>
-    <%= f.input :end_time, as: :date, label: 'Fin' %>
+    <%= f.input :start_time, as: :date, label: 'Début', html5: true %>
+    <%= f.input :end_time, as: :date, label: 'Fin', html5: true %>
+
     <%= f.button :submit, 'Reserver', class: 'btn btn-flat' %>
   <% end %>
 </div>
