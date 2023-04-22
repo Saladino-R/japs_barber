@@ -8,9 +8,10 @@
 
 <section class="card">
 <div id="flat-booking-dates">
-  <%= simple_form_for [@cut, @booking], data: { controller: 'flatpickr'} do |f| %>
+
+  <%= simple_form_for [@cut, @booking] do |f| %>
     <%= f.input :description, label: 'Détails', id: 'description', :input_html => {:maxlength => 200},
-    placeholder: "Quelle longueur souhaitez vous enlever, si teinture la couleur ou autre rensignements...", %>
+    placeholder: "Quelle longueur souhaitez vous enlever, si teinture la couleur ou autre rensignements..." %>
     <span id="char_count"></span>
     <%= f.input :start_time, as: :date, label: 'Début', html5: true %>
     <%= f.input :end_time, as: :date, label: 'Fin', html5: true %>
@@ -29,13 +30,18 @@
     let numOfEnteredChars = textArea.value.length;
     let counter = maxNumOfChars - numOfEnteredChars;
     if (counter < 20) {
-      characterCounter.style.color = "red";
-  } else if (counter < 40) {
-      characterCounter.style.color = "orange";
-  } else {
-      characterCounter.style.color = "black";
-  }
-    characterCounter.textContent = counter + " caractères restants";
+        characterCounter.style.color = "red";
+    } else if (counter < 40) {
+        characterCounter.style.color = "orange";
+    } else {
+        characterCounter.style.color = "black";
+    }
+
+     if (counter<=1) {
+      characterCounter.textContent = counter + " caractère restant.";
+    } else {
+      characterCounter.textContent = counter + " caractères restants.";
+    }
   };
   textArea.addEventListener("input", countCharacters);
 </script>
