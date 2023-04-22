@@ -4,10 +4,33 @@
 <section class="card">
 <div id="flat-booking-dates">
   <%= simple_form_for [@cut, @booking] do |f| %>
-    <%= f.input :description, label: 'Détails', placeholder: "Quelle longueur souhaitez vous enlever, si teinture la couleur ou autre rensignements..." %>
+    <%= f.input :description, label: 'Détails', id: 'description', :input_html => {:maxlength => 200} %>
+    <%# # placeholder: "Quelle longueur souhaitez vous enlever, si teinture la couleur ou autre rensignements...", %>
+    <span id="char_count"></span>
     <%= f.input :start_time, as: :date, label: 'Début' %>
     <%= f.input :end_time, as: :date, label: 'Fin' %>
     <%= f.button :submit, 'Reserver', class: 'btn btn-flat' %>
   <% end %>
 </div>
 </section>
+
+
+<script type="text/javascript">
+  let textArea = document.getElementById("booking_description");
+  let characterCounter = document.getElementById("char_count");
+  const maxNumOfChars = 200;
+  const countCharacters = () => {
+    let numOfEnteredChars = textArea.value.length;
+    let counter = maxNumOfChars - numOfEnteredChars;
+    if (counter < 20) {
+      characterCounter.style.color = "red";
+  } else if (counter < 40) {
+      characterCounter.style.color = "orange";
+  } else {
+      characterCounter.style.color = "black";
+  }
+    characterCounter.textContent = counter + " caractères restants";
+  };
+  textArea.addEventListener("input", countCharacters);
+</script>
+          <%# counter.text(max_length - $(this).val().length); %>
