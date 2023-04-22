@@ -4,6 +4,7 @@ class BookingsController < ApplicationController
   def index
     @cut = Cut.find(params[:cut_id])
     @booking = Booking.new
+    @maximum_length = Booking.validators_on( :description ).first.options[:maximum]
   end
 
   def create
