@@ -12,15 +12,15 @@ class BookingsController < ApplicationController
     @booking.user_id = current_user.id
     @booking.cut_id = @cut.id
     if @booking.save
-      redirect_to root_path, notice: "Reservation prise en compte"
+      redirect_to root_path, notice: "Reservation pour le #{@booking.start_time.try(:strftime, '%d %B %Y')} bien prise en compte à bientôt !"
     else
-      redirect_to cut_bookings_path(@cut.id), notice: "Erreur dans le formulaire"
+      render :index, status: :unprocessable_entity
     end
   end
 
   private
 
   def book_params
-    params.require(:booking).permit(:start_time, :end_time, :user_id, :cut_id)
+    params.require(:booking).permit(:start_time, :end_time, :description, :user_id, :cut_id)
   end
 end
