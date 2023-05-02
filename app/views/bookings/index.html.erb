@@ -14,7 +14,6 @@
     placeholder: "Quelle longueur souhaitez vous enlever, si teinture la couleur ou autre rensignements..." %>
     <span id="char_count"></span>
     <%= f.input :start_time, as: :date, label: 'Début', html5: true %>
-    <%= f.input :end_time, as: :date, label: 'Fin', html5: true %>
 
     <%= f.button :submit, 'Reserver', class: 'btn btn-flat' %>
   <% end %>
@@ -45,4 +44,3 @@
   };
   textArea.addEventListener("input", countCharacters);
 </script>
-          <%# counter.text(max_length - $(this).val().length); %>

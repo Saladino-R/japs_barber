@@ -4,7 +4,6 @@ class Booking < ApplicationRecord
 
   validates :description, presence: true, :length => { :maximum => 200 }
   validates :start_time, presence: true
-  validates :end_time, presence: true
 
   # private
 
