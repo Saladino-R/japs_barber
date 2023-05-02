@@ -14,4 +14,4 @@ cut1.save
 cut2 = Cut.new(price: 15, description: 'Coupe Homme')
 cut2.save
 
-puts "Done #{Cut.size}"
+puts "Done #{Cut.count}"
