@@ -6,17 +6,18 @@
     </div>
 </div>
 
-<section class="card">
+<section class="card-form">
 <div id="flat-booking-dates">
-
   <%= simple_form_for [@cut, @booking], data: {
     controller: "flatpickr"
   } do |f| %>
+    <div class="container-form">
     <%= f.input :description, label: 'Détails', id: 'description', :input_html => {:maxlength => 200},
     placeholder: "Quelle longueur souhaitez vous enlever, si teinture la couleur ou autre rensignements..." %>
     <span id="char_count"></span>
     <%= f.input :start_time, as: :string, label: 'Début' %>
     <%= f.button :submit, 'Reserver', class: 'btn btn-flat' %>
+    </div>
   <% end %>
 </div>
 </section>
